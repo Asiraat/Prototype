@@ -13,6 +13,11 @@
   z-index: 1000; /* Ensure it stays on top of other elements */
   margin: 0; /* Remove any default margins */
   overflow: hidden; /* Hide any content overflow */
+  line-height: 2em; /* line-heightを要素の高さと同じ2emに設定 */
+}
+/* top-bar-textを垂直方向に中央揃え */
+.top-bar-text {
+  line-height: inherit; /* 親要素（.top-bar）のline-heightを継承 */
 }
 /* Add a thin black line below the top-bar */
 .top-bar::after {
