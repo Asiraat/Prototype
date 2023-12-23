@@ -1,0 +1,12 @@
+/* main.css */
+
+/* Styles for the top bar */
+.top-bar {
+  position: fixed; /* Fix the element at the top of the viewport */
+  top: 0; /* Place it at the top */
+  width: 100%; /* Full width */
+  background-color: #ff7f7e; /* Set the background color */
+  color: white; /* Set text color to contrast */
+  padding: 10px 20px; /* Add padding for space around the text */
+  z-index: 1000; /* Ensure it stays on top of other elements */
+}
