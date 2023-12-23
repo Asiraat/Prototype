@@ -16,13 +16,10 @@
   display: flex;
   align-items: center; /* コンテンツを垂直方向に中央揃え */
 }
-.content {
-  height: 2em; /* テキストの高さを2emに設定 */
-  width: 100%; /* 幅を100%に設定し、親要素に合わせる */
-}
-
 .top-bar-text {
-  text-align: center; /* テキストを水平方向に中央揃え */
+  text-align: left; /* テキストを左揃えにする */
+  margin: 0; /* テキストの余白をリセット */
+  padding: 0; /* テキストの余白をリセット */
 }
 /* Add a thin black line below the top-bar */
 .top-bar::after {
