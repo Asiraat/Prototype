@@ -12,4 +12,16 @@
   padding: 10px 20px; /* Add padding for space around the text */
   z-index: 1000; /* Ensure it stays on top of other elements */
   margin: 0; /* Remove any default margins */
+  overflow: hidden; /* Hide any content overflow */
+}
+/* Add a thin black line below the top-bar */
+.top-bar::after {
+  content: ''; /* Add content for the pseudo-element */
+  position: absolute; /* Position the line within the top-bar */
+  left: 0; /* Start the line from the left edge */
+  bottom: 0; /* Place the line at the bottom of the top-bar */
+  width: 100%; /* Full width */
+  height: 1px; /* Thin line height */
+  background-color: black; /* Black color for the line */
+  z-index: -1; /* Place the line behind the top-bar content */
 }
