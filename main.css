@@ -4,8 +4,8 @@
 .top-bar {
   position: fixed; /* Fix the element at the top of the viewport */
   top: 0; /* Place it at the top */
-  width: 110%; /* Full width */
-  height: 1.5em; /* Increase the height to 1.5 times the current height */
+  width: 150%; /* Full width */
+  height: 3em; /* Increase the height to 1.5 times the current height */
   background-color: #ff7f7e; /* Set the background color */
   color: black; /* Set text color to contrast */
   padding: 10px 20px; /* Add padding for space around the text */
