@@ -16,10 +16,22 @@
   display: flex;
   align-items: center; /* コンテンツを垂直方向に中央揃え */
 }
+/* top-bar内のテキストレイアウトを設定 */
 .top-bar-text {
   text-align: left; /* テキストを左揃えにする */
   margin: 0; /* テキストの余白をリセット */
   padding: 0; /* テキストの余白をリセット */
+}
+/* top-bar内のテキストの外観を設定 */
+.custom-link {
+  color: black; /* リンクの色を黒に設定 */
+  font-size: 4; /* フォントサイズを4に設定 */
+  text-decoration: none; /* 下線などのテキスト装飾をリセット */
+}
+.custom-link:hover {
+  /* 必要に応じてマウスホバー時のスタイルを設定 */
+  /* 例えば、マウスホバー時の色を変更する場合など */
+  color: darkgrey;
 }
 /* Add a thin black line below the top-bar */
 .top-bar::after {
