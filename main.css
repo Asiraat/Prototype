@@ -1,4 +1,14 @@
 /* main.css */
+/* font settings */
+@font-face {
+  font-family: 'mamelon3.5'; /* フォントファミリーの名前を指定 */
+  src: url('https://Asiraat.github.io/Prototype/Mamelon-3.5HiRegular.woff2') format('woff2'), /* WOFF2形式 */
+  /* url('path-to-your-font/Mamelon-Regular.woff') format('woff');  WOFF形式 は配布なし*/
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 
 /* Styles for the top bar */
 .top-bar {
@@ -27,6 +37,7 @@
   color: black; /* リンクの色を黒に設定 */
   font-size: 4; /* フォントサイズを4に設定 */
   text-decoration: none; /* 下線などのテキスト装飾をリセット */
+  font-family: 'mamelon3.5', sans-serif; /* フォントファミリーを適用 */
 }
 .custom-link:hover {
   /* 必要に応じてマウスホバー時のスタイルを設定 */
