@@ -31,7 +31,7 @@
 .custom-link:hover {
   /* 必要に応じてマウスホバー時のスタイルを設定 */
   /* 例えば、マウスホバー時の色を変更する場合など */
-  color: darkgrey;
+  color: navy;
 }
 /* Add a thin black line below the top-bar */
 .top-bar::after {
