@@ -95,3 +95,35 @@ body {
   left: 50%;
   transform: translate(-50%);
 }
+
+/* T-O Map text*/
+
+.text-above,
+.text-inside,
+.text-below {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}
+
+.text-above {
+  top: 10px; /* Adjust the top position as needed */
+}
+
+.text-inside {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.text-below {
+  bottom: 10px; /* Adjust the bottom position as needed */
+}
+
+/* Additional styling for text content (customize as desired) */
+.text-above,
+.text-inside,
+.text-below {
+  font-family: 'mamelon3.5', sans-serif;
+  font-size: 3;
+  color: black;
+}
