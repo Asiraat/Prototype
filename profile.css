@@ -59,13 +59,13 @@
 /* profile */
 .profile-picture {
   text-align: center;
-  margin-top: 50px; /* place photo below top bar */
+  margin-top: 60px; /* place photo below top bar */
 }
 
 .profile-picture img {
   width: 200px; /* resize */
   height: 200px; /* resize */
   border-radius: 50%; /* Show photo in a circle */
-  border: 3px solid #fff; /* white border for size adjustment */
+  border: 3px solid #000; /* black border for size adjustment */
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.3); /* add shadow */
 }
