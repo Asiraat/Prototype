@@ -91,7 +91,7 @@ body {
   height: 50%; /* Changed height to 50% */
   background-color: black;
   position: absolute;
-  top: 50%;
+  bottom: 0; /* Align to the bottom */
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%);
 }
