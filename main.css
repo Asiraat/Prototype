@@ -119,9 +119,13 @@ body {
 }
 
 .text-below {
-  bottom: 10px; /* Adjust the bottom position as needed */
+  position: absolute;
+  width: 50%; /* Adjust the width to control the right-side positioning */
+  text-align: center;
+  top: 75%; /* Position at 75% from the top */
+  right: 0; /* Align to the right side */
+  transform: translate(0, -50%); /* Center vertically */
 }
-
 /* Additional styling for text content (customize as desired) */
 .text-above,
 .text-inside,
