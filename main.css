@@ -107,7 +107,10 @@ body {
 }
 
 .text-above {
-  top: 10px; /* Adjust the top position as needed */
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 25%; /* Adjust the top position to place the text in the middle of the top half */
 }
 
 .text-inside {
