@@ -99,8 +99,8 @@ body {
 /* T-O Map text*/
 
 .text-above,
-.text-inside,
-.text-below {
+.text-lower_left,
+.text-lower_right {
   position: absolute;
   width: 100%;
   text-align: center;
@@ -113,23 +113,27 @@ body {
   top: 25%; /* Adjust the top position to place the text in the middle of the top half */
 }
 
-.text-inside {
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.text-below {
+.text-lower_left {
   position: absolute;
   width: 50%; /* Adjust the width to control the right-side positioning */
   text-align: center;
-  top: 75%; /* Position at 75% from the top */
+  top: 70%; /* Position at 70% from the top */
+  left: 0; /* Align to the left side */
+  transform: translate(0, -50%); /* Center vertically */
+}
+
+.text-lower_right {
+  position: absolute;
+  width: 50%; /* Adjust the width to control the right-side positioning */
+  text-align: center;
+  top: 70%; /* Position at 70% from the top */
   right: 0; /* Align to the right side */
   transform: translate(0, -50%); /* Center vertically */
 }
 /* Additional styling for text content (customize as desired) */
 .text-above,
-.text-inside,
-.text-below {
+.text-lower_left,
+.text-lower_right {
   font-family: 'mamelon3.5', sans-serif;
   font-size: 3;
   color: black;
