@@ -70,7 +70,7 @@
 .profile-picture {
   text-align: center;
   margin-top: 70px; /* place photo below top bar */
-  margin-right: 20px; /* set spacing between images and SNS icons*/
+  margin-right: 60px; /* set spacing between images and SNS icons*/
 }
 .profile-picture img {
   width: 200px; /* resize */
@@ -87,8 +87,9 @@
 }
 
 .social-icon {
-  margin-right: 40px; /* spacing between icons */
+  margin-right: 30px; /* spacing between icons */
   margin-bottom: 20px; /* spacing under icons */
+  break-inside: avoid; /* specify wrap-around */
 }
 
 .social-icon img {
