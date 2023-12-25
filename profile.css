@@ -57,15 +57,41 @@
 }
 
 /* profile */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+/* profile style */
+.profile {
+  display: flex;
+  align-items: center;
+}
 .profile-picture {
   text-align: center;
   margin-top: 70px; /* place photo below top bar */
+  margin-right: 20px; /* set spacing between images and SNS icons*/
 }
-
 .profile-picture img {
   width: 200px; /* resize */
   height: 200px; /* resize */
-  border-radius: 50%; /* Show photo in a circle */
+  border-radius: 50%; /* rounded photos */
   border: 3px solid #000; /* black border for size adjustment */
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.3); /* add shadow */
+}
+
+.social-icons {
+  display: flex;
+  flex-wrap: wrap; /* wrap SNS icons to multiple lines */
+}
+
+.social-icon {
+  margin-right: 10px; /* spacing between icons */
+  margin-bottom: 10px; /* spacing under icons */
+}
+
+.social-icon img {
+  width: 40px; /* resize */
+  height: 40px; /* resize */
+  /* additional styling can be done here */
 }
