@@ -55,21 +55,17 @@
   background-color: black; /* Black color for the line */
   z-index: -1; /* Place the line behind the top-bar content */
 }
-/* profile */
-header {
-  text-align: center;
-  margin-bottom: 20px;
-}
 
-/* style of profile picture */
+/* profile */
 .profile-picture {
   text-align: center;
+  margin-top: 50px; /* place photo below top bar */
 }
 
 .profile-picture img {
   width: 200px; /* resize */
   height: 200px; /* resize */
-  border-radius: 50%; /* circle picture */
-  border: 3px solid #fff; /* white border line */
+  border-radius: 50%; /* Show photo in a circle */
+  border: 3px solid #fff; /* white border for size adjustment */
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.3); /* add shadow */
 }
