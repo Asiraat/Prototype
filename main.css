@@ -55,3 +55,42 @@
   background-color: black; /* Black color for the line */
   z-index: -1; /* Place the line behind the top-bar content */
 }
+
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Style for the circular map container */
+.circular-map {
+  width: 200px; /* Adjust this value to change the size of the map */
+  height: 200px; /* Adjust this value to change the size of the map */
+  border-radius: 50%; /* Creates a circular shape */
+  background-color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Style for the horizontal bar */
+.horizontal-bar {
+  width: 100%;
+  height: 33.33%;
+  background-color: #fff; /* Change the color as desired */
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+/* Style for the vertical bar */
+.vertical-bar {
+  width: 33.33%;
+  height: 100%;
+  background-color: #fff; /* Change the color as desired */
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
