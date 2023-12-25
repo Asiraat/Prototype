@@ -31,6 +31,7 @@
   text-align: left; /* テキストを左揃えにする */
   margin: 0; /* テキストの余白をリセット */
   padding: 0; /* テキストの余白をリセット */
+  text-align: left;
 }
 /* top-bar内のテキストの外観を設定 */
 .custom-link {
