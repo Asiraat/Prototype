@@ -19,7 +19,7 @@
   height: 2em; /* Set the desired height */
   background-color: #ff7f7e; /* Set the background color */
   color: black; /* Set text color to contrast */
-  padding: 10px 20px; /* Add padding for space around the text */
+  padding: 10px 60px; /* Add padding for space around the text */
   z-index: 1000; /* Ensure it stays on top of other elements */
   margin: 0; /* Remove any default margins */
   overflow: hidden; /* Hide any content overflow */
@@ -83,11 +83,12 @@
 .social-icons {
   display: flex;
   flex-wrap: wrap; /* wrap SNS icons to multiple lines */
+  gap: 20px 40px; /* spacing between icons in horizontal direction */
 }
 
 .social-icon {
-  margin-right: 10px; /* spacing between icons */
-  margin-bottom: 10px; /* spacing under icons */
+  margin-right: 40px; /* spacing between icons */
+  margin-bottom: 20px; /* spacing under icons */
 }
 
 .social-icon img {
