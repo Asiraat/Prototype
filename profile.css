@@ -70,8 +70,12 @@
   justify-content: center; /* Center horizontally */
   margin-top: 70px; /* Adjusted margin */
 }
+.profile-picture {
+  display: flex; /* Add this line */
+  flex-direction: column; /* Adjust if necessary */
+  align-items: center; /* Ensure vertical alignment */
+}
 .profile-picture img {
-  display: flex;
   width: 200px; /* resize */
   height: 200px; /* resize */
   border-radius: 30%; /* rounded photo */
