@@ -71,6 +71,7 @@
   margin-top: 70px; /* Adjusted margin */
 }
 .profile-picture img {
+  display: flex;
   width: 200px; /* resize */
   height: 200px; /* resize */
   border-radius: 30%; /* rounded photo */
