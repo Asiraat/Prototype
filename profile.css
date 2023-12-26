@@ -75,6 +75,7 @@
 .profile-picture img {
   width: 200px; /* resize */
   height: 200px; /* resize */
+  border-radius: 30%; /* 写真を丸く表示 */
   border: 3px solid #000; /* black border for size adjustment */
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.3); /* add shadow */
 }
