@@ -10,7 +10,7 @@
 
 
 
-/* Styles for the top bar */
+/* Styles for the top bar /
 .top-bar {
   position: fixed; /* Fix the element at the top of the viewport */
   top: 0; /* Place it at the top */
@@ -19,30 +19,30 @@
   height: 2em; /* Set the desired height */
   background-color: #ff7f7e; /* Set the background color */
   color: black; /* Set text color to contrast */
-  padding: 10px 60px; /* Add padding for space around the text */
+  padding: 10px 20px; /* Add padding for space around the text */
   z-index: 1000; /* Ensure it stays on top of other elements */
   margin: 0; /* Remove any default margins */
   overflow: hidden; /* Hide any content overflow */
   display: flex;
-  align-items: center; /* コンテンツを垂直方向に中央揃え */
+  align-items: center; /* center content vertically */
 }
-/* top-bar内のテキストレイアウトを設定 */
+/* set text layout in top-bar */
 .top-bar-text {
-  text-align: left; /* テキストを左揃えにする */
-  margin: 0; /* テキストの余白をリセット */
-  padding: 0; /* テキストの余白をリセット */
-  text-align: left;
+  margin: 0; /* reset text margins */
+  padding: 0; /* reset text margins */
+  text-align: left; /* left-align text */
+  flex: 1; /* Pushes text to the left */
 }
-/* top-bar内のテキストの外観を設定 */
+/* set appearance of text in top-bar */
 .custom-link {
-  color: black; /* リンクの色を黒に設定 */
-  font-size: 4; /* フォントサイズを4に設定 */
-  text-decoration: none; /* 下線などのテキスト装飾をリセット */
-  font-family: 'mamelon3.5', sans-serif; /* フォントファミリーを適用 */
+  color: black; /* set link color to black */
+  font-size: 4; /* set font size to 4 */
+  text-decoration: none; /* reset underlines and other text decorations */
+  font-family: 'mamelon3.5', sans-serif; /* apply font family */
 }
 .custom-link:hover {
-  /* 必要に応じてマウスホバー時のスタイルを設定 */
-  /* 例えば、マウスホバー時の色を変更する場合など */
+  /* set mouse hover style as needed */
+  /* ex: to change the color of the mouse hover */
   color: navy;
 }
 /* Add a thin black line below the top-bar */
@@ -67,15 +67,13 @@
 .profile {
   display: flex;
   align-items: center;
-}
-.profile-picture {
-  text-align: center;
-  margin-top: 70px; /* place photo below top bar */
+  justify-content: center; /* Center horizontally */
+  margin-top: 70px; /* Adjusted margin */
 }
 .profile-picture img {
   width: 200px; /* resize */
   height: 200px; /* resize */
-  border-radius: 30%; /* 写真を丸く表示 */
+  border-radius: 30%; /* rounded photo */
   border: 3px solid #000; /* black border for size adjustment */
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.3); /* add shadow */
 }
