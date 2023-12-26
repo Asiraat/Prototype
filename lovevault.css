@@ -77,7 +77,23 @@
   border-radius: 11px;
   box-shadow: 8px 8px 8px 0px rgba(193, 69, 69, 0.45), -2px -2px 8px 0px rgba(193, 69, 69, 0.45);
   max-width: 60%; /* Set the width to 60% of the browser display */
-  margin: 0 auto; /* Centers the container horizontally */
+  margin: 20px auto; /* Centers the container and adds space around it */
+}
+/* Style for the image box */
+.image-box {
+  flex: 1;
+}
+/* Style for the image inside the box */
+.image-box img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+/* Style for the text box */
+.text-box {
+  flex: 2;
+  display: flex;
+  justify-content: center; /* Center text horizontally */
+  align-items: center; /* Center text vertically */
   padding: 20px; /* Adjust padding based on your design */
-  height: calc(33vh - 40px); /* 1/3 of the viewport height minus padding */
 }
