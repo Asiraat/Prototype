@@ -77,3 +77,23 @@
   border: 3px solid #000; /* black border for size adjustment */
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.3); /* add shadow */
 }
+
+/* Thin gray line under profile picture */
+.line-under-profile {
+  width: 200px; /* Same width as profile picture */
+  height: 1px;
+  background-color: #ccc; /* Gray color */
+  margin-top: 20px; /* Spacing below the profile picture */
+}
+
+/* Text box below profile picture */
+.profile-text {
+  margin-top: 20px; /* Same spacing as the profile picture */
+  text-align: center;
+}
+.profile-text p {
+  margin: 0;
+  font-family: 'mamelon3.5', sans-serif;
+  font-size: 18px;
+}
+
