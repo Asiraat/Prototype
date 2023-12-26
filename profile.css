@@ -80,10 +80,10 @@
 
 /* Thin gray line under profile picture */
 .line-under-profile {
-  width: 200px; /* Same width as profile picture */
+  width: 70vw; /* Set the width to 70% of the viewport width */
   height: 1px;
   background-color: #888; /* Gray color */
-  margin-top: 300px; /* Spacing below the profile picture */
+  margin-top: 30px; /* Spacing below the profile picture */
 }
 
 /* Text box below profile picture */
