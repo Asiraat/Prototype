@@ -67,29 +67,29 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 /* Style for the container holding the image and text */
 .container {
   display: flex;
-  border: 1px solid #ccc; /* Adding a border around the container */
-  max-width: 600px; /* Adjust this based on your design */
+  border-radius: 11px;
+  box-shadow: 8px 8px 8px 0px rgba(193, 69, 69, 0.45), -2px -2px 8px 0px rgba(193, 69, 69, 0.45);
+  max-width: 60%; /* Set the width to 60% of the browser display */
   margin: 20px auto; /* Centers the container and adds space around it */
 }
-
 /* Style for the image box */
 .image-box {
   flex: 1;
 }
-
 /* Style for the image inside the box */
 .image-box img {
   width: 100%;
   height: auto;
   display: block;
 }
-
 /* Style for the text box */
 .text-box {
   flex: 2;
+  display: flex;
+  justify-content: center; /* Center text horizontally */
+  align-items: center; /* Center text vertically */
   padding: 20px; /* Adjust padding based on your design */
 }
