@@ -82,18 +82,18 @@
 .line-under-profile {
   width: 200px; /* Same width as profile picture */
   height: 1px;
-  background-color: #ccc; /* Gray color */
+  background-color: #888; /* Gray color */
   margin-top: 300px; /* Spacing below the profile picture */
 }
 
 /* Text box below profile picture */
 .profile-text {
-  margin-top: 20px; /* Same spacing as the profile picture */
+  margin-top: 30px; /* Same spacing as the profile picture */
   text-align: center;
 }
 .profile-text p {
   margin: 0;
   font-family: 'mamelon3.5', sans-serif;
-  font-size: 18px;
+  font-size: 3;
 }
 
