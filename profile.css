@@ -83,7 +83,7 @@
   width: 200px; /* Same width as profile picture */
   height: 1px;
   background-color: #ccc; /* Gray color */
-  margin-top: 20px; /* Spacing below the profile picture */
+  margin-top: 300px; /* Spacing below the profile picture */
 }
 
 /* Text box below profile picture */
