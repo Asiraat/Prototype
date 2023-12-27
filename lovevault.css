@@ -74,7 +74,6 @@
   justify-content: center;
   height: 100vh;
 }
-
 .box-1:hover {
   transform: scale(1.05); /* ホバー時に拡大 */
   transition: transform 0.3s ease; /* ホバー時のトランジションを設定 */
@@ -94,10 +93,16 @@
 }
 
 @keyframes pulse {
-  0%, 100% {
+  0% {
     transform: scale(1.05);
+    opacity: 0.8;
   }
   50% {
     transform: scale(1.03);
+    opacity: 0.6;
+  }
+  100% {
+    transform: scale(1.05);
+    opacity: 0.8;
   }
 }
