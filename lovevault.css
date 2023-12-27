@@ -73,6 +73,7 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
+ margin: 80px auto 0; /* 上側にトップバーの高さ分（80px）のマージンを追加 */
 }
 
 .box-1 {
@@ -88,7 +89,6 @@
   border-radius: 32px;
   box-shadow: 8px 8px 8px 0px rgba(255, 127, 126, 0.45), -2px -2px 20px 0px rgba(255, 127, 126, 0.4);
   margin-bottom: 40px; /* ボックス間の余白を設定します */
-　margin-top: 80px auto 0; /* 上側にトップバーの高さ分（80px）のマージンを追加 */
   text-decoration: none; /* リンクの下線を削除します */
   transition: transform 0.3s ease; /* ホバーエフェクトのためのトランジションを追加します */
 }
