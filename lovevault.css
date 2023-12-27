@@ -10,6 +10,7 @@
   .custom-link1 {
   color: black; /* リンクの色を黒に設定 */
   font-size: 3; /* フォントサイズを4に設定 */
+　text-decoration: none; /* 下線などのテキスト装飾をリセット */
   font-family: 'mamelon3.5', sans-serif; /* フォントファミリーを適用 */
   }
   
@@ -74,6 +75,7 @@
 .image-box img {
   width: 60px; /* resize */
   height: 60px; /* resize */
+  margin: auto 0;
 .text-box {
   text-align: center;
 }
@@ -81,4 +83,5 @@
   margin: 0;
   font-family: 'mamelon3.5', sans-serif;
   font-size: 3;
+  text-align: center;
 }
