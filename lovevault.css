@@ -94,14 +94,14 @@
 }
 .box-1:hover {
   transition: transform 0.3s ease; /* トランジションを追加 */
-  animation: pulse .5s forwards;
+  animation: pulse .3s forwards;
 }
 @keyframes pulse {
   0% {
     transform: scale(1.05);
     opacity: 0.8;
   }
-  50% {
+  80% {
     transform: scale(1.03);
     opacity: 0.6;
   }
