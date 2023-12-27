@@ -85,3 +85,16 @@
   font-size: 3;
   text-align: center;
 }
+
+.box-NovelVault {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333333;
+  background-color: #ffffff;
+  font-size: 3;
+  max-width: 60%;
+  height: 80px;
+  border-radius: 32px;
+  box-shadow: 8px 8px 8px 0px rgba(255, 127, 126, 0.45), -2px -2px 20px 0px rgba(255, 127, 126, 0.4);
+}
