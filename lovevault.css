@@ -56,3 +56,13 @@
     background-color: black; /* Black color for the line */
     z-index: -1; /* Place the line behind the top-bar content */
   }
+
+
+/* Style for the container holding the image and text */
+.container {
+  display: flex;
+  border-radius: 11px;
+  box-shadow: 8px 8px 8px 0px rgba(255, 127, 126, 0.45), -2px -2px 8px 0px rgba(255, 127, 126, 0.45);
+  max-width: 60%;
+  margin: 60px auto; /* Adjusted margin to leave space below the top bar */
+}
