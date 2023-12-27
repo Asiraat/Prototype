@@ -7,7 +7,11 @@
     font-weight: normal;
     font-style: normal;
   }
-  
+  .custom-link1 {
+  color: black; /* リンクの色を黒に設定 */
+  font-size: 3; /* フォントサイズを4に設定 */
+  font-family: 'mamelon3.5', sans-serif; /* フォントファミリーを適用 */
+  }
   
   
   /* Styles for the top bar */
