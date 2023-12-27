@@ -95,6 +95,9 @@
   transform: scale(1.05); /* ホバー時に拡大 */
   transition: transform 0.3s ease; /* ホバー時のトランジションを設定 */
 }
+.box-1:hover::after {
+　animation: pulse 1s infinite; /* ホバーアニメーションを追加 */
+}
 @keyframes pulse {
   0% {
     transform: scale(1.08);
