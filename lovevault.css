@@ -79,7 +79,7 @@
 @media screen and (max-width: 767px) {
   .box-container {
     width: 90%; /* 画面幅の90%に調整 */
-    margin-top: 40px; /* スマートフォン用のトップマージン */
+    margin-top: 30px; /* スマートフォン用のトップマージン */
   }
 }
 
