@@ -1,7 +1,9 @@
 // 仮の画像URLの配列（実際のランダムな画像URLを取得する方法はサーバーサイドで処理する必要があります）
 const imageUrls = [
-  "https://Asiraat.github.io/Prototype/picture/kani.ico",
-  "https://Asiraat.github.io/Prototype/picture/saya.ico",
+  "https://Asiraat.github.io/Prototype/picture2/00004-975062830.png",
+  "https://Asiraat.github.io/Prototype/picture2/00045-712403987.png",
+  "https://Asiraat.github.io/Prototype/picture2/00049-768448109.png"
+  "https://Asiraat.github.io/Prototype/picture2/00119-814775075.png"
 
   // 他の画像URLを追加
 ];
