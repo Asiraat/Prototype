@@ -60,11 +60,13 @@
 
 
 
+/* 修正したスタイル */
 main {
   display: flex;
   justify-content: center;
   align-items: flex-start; /* 垂直方向の上部揃え */
   height: calc(100vh - 60px); /* トップバーの高さを考慮して調整 */
+  flex-direction: column; /* 追加：コンテンツを縦方向に並べる */
 }
 .image-container {
   width: 384px;
@@ -72,7 +74,8 @@ main {
   overflow: hidden;
   border-radius: 10%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  margin-top: 40px; /* トップバーからの距離 */
+  margin-top: auto; /* トップバーからの距離 */
+  margin-bottom: 20px; /* 余白を追加 */
 }
 #random-image {
   width: 100%;
