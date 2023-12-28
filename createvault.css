@@ -72,7 +72,7 @@ main {
   overflow: hidden;
   border-radius: 10%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  margin-top: 20px; /* トップバーからの距離 */
+  margin-top: 40px; /* トップバーからの距離 */
 }
 #random-image {
   width: 100%;
