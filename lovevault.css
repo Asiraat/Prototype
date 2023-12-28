@@ -98,6 +98,7 @@
   margin-bottom: 40px; /* ボックス間の余白を設定します */
   text-decoration: none; /* リンクの下線を削除します */
   transition: transform 0.3s ease; /* ホバーエフェクトのためのトランジションを追加します */
+  font-family: 'mamelon3.5', sans-serif; /* フォントファミリーを適用 */
 }
 .box-1:hover {
   transition: transform 0.3s ease; /* トランジションを追加 */
