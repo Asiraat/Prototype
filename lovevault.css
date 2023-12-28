@@ -73,7 +73,14 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
- margin: 80px auto 0; /* 上側にトップバーの高さ分（80px）のマージンを追加 */
+  margin: 80px auto 0; /* 上側にトップバーの高さ分（80px）のマージンを追加 */
+}
+/* スマートフォン用の調整 */
+@media screen and (max-width: 767px) {
+  .box-container {
+    width: 60%; /* 画面幅の90%に調整 */
+    margin-top: 60px; /* スマートフォン用のトップマージン */
+  }
 }
 
 .box-1 {
@@ -85,8 +92,8 @@
   font-size: 4; /* ここを適切な値に変更してください */
   width: 60%;
 　max-width: 400px; /* 必要に応じて最大幅を指定 */
-  height: 80px;
-  border-radius: 32px;
+  height: 60px;
+  border-radius: 24px;
   box-shadow: 8px 8px 8px 0px rgba(255, 127, 126, 0.45), -2px -2px 20px 0px rgba(255, 127, 126, 0.4);
   margin-bottom: 40px; /* ボックス間の余白を設定します */
   text-decoration: none; /* リンクの下線を削除します */
