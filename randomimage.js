@@ -4,8 +4,8 @@ function resizeAndDisplayImage(url) {
   img.onload = function() {
     const canvas = document.createElement('canvas');
     const ctx = canvas.getContext('2d');
-    canvas.width = 384;
-    canvas.height = 216;
+    canvas.width = 768;
+    canvas.height = 432;
     ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
     
     const resizedImageUrl = canvas.toDataURL(); // リサイズ後の画像のDataURLを取得
