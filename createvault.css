@@ -68,16 +68,17 @@ main {
   height: 100vh; 
 }
 .image-container {
-  max-width: 384px;
-  max-height: 216px;
+  max-width: 768px;
+  max-height: 432px;
   overflow: hidden;
-  border-radius: 10%;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border-radius: 20%;
+  box-shadow: 5 5 10px rgba(0, 0, 0, 0.3);
   height: calc(100vh - 2em); /* ブラウザの高さ - トップバーの高さ */
 }
 #random-image {
   max-width: 100%; /* 画像が親要素を超えないようにする */
   max-height: 100%; /* 画像が親要素を超えないようにする */
+　height: calc(100vh - 2em); /* ブラウザの高さ - トップバーの高さ */
   object-fit: cover;
   border-radius: 10%;
   position: absolute;
