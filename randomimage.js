@@ -1,29 +1,28 @@
+// 画像のリサイズと表示処理
+function resizeAndDisplayImage(url) {
+  const img = new Image();
+  img.onload = function() {
+    const canvas = document.createElement('canvas');
+    const ctx = canvas.getContext('2d');
+    canvas.width = 384;
+    canvas.height = 216;
+    ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+    
+    const resizedImageUrl = canvas.toDataURL(); // リサイズ後の画像のDataURLを取得
+    
+    // リサイズ後の画像を表示
+    const randomImageElement = document.getElementById("random-image");
+    randomImageElement.src = resizedImageUrl;
+  };
+  
+  img.src = url;
+}
+
 // ページが読み込まれた時に実行される処理
 window.onload = function() {
-  const randomIndex = Math.floor(Math.random() * 12) + 1; // 1から12のランダムな数値を生成
-  const randomImageUrl = `https://Asiraat.github.io/Prototype/picture2/${randomIndex}.png`; // ランダムな数値を含む画像URLを生成
+  const randomIndex = Math.floor(Math.random() * 23) + 1; // 1から23のランダムな数値を生成
+  const randomImageUrl = `path_to_my_image${randomIndex}.jpg`; // ランダムな数値を含む画像URLを生成
 
-  // ランダムな画像を取得して表示
-  const randomImageElement = document.getElementById("random-image");
-  randomImageElement.src = randomImageUrl;
+  // リサイズと表示処理を呼び出す
+  resizeAndDisplayImage(randomImageUrl);
 };
-
-// 画像をリサイズする関数
-function resizeImage(img) {
-  const container = img.parentNode;
-  const containerWidth = container.offsetWidth;
-  const containerHeight = container.offsetHeight;
-
-  const imgWidth = img.width;
-  const imgHeight = img.height;
-
-  if (imgWidth > containerWidth || imgHeight > containerHeight) {
-    const ratioWidth = containerWidth / imgWidth;
-    const ratioHeight = containerHeight / imgHeight;
-
-    const minRatio = Math.min(ratioWidth, ratioHeight);
-
-    img.style.width = `${imgWidth * minRatio}px`;
-    img.style.height = `${imgHeight * minRatio}px`;
-  }
-}
