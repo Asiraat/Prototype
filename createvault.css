@@ -73,11 +73,11 @@ main {
   overflow: hidden;
   border-radius: 10%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  
+  height: calc(100vh - 2em); /* ブラウザの高さ - トップバーの高さ */
 }
 #random-image {
-  width: auto;
-  height: auto;
+  max-width: 100%; /* 画像が親要素を超えないようにする */
+  max-height: 100%; /* 画像が親要素を超えないようにする */
   object-fit: cover;
   border-radius: 10%;
   position: absolute;
