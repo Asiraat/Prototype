@@ -73,12 +73,15 @@ main {
   overflow: hidden;
   border-radius: 10%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  margin-top: auto; /* トップバーからの距離 */
-  margin-bottom: 20px; /* 余白を追加 */
+  
 }
 #random-image {
   width: 100%;
   height: auto;
   object-fit: cover;
   border-radius: 10%;
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translate(-50%, -50%);
 }
