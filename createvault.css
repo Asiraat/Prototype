@@ -74,9 +74,10 @@ main {
   border-radius: 20%;
   box-shadow: 5 5 10px rgba(0, 0, 0, 0.3);
   height: calc(100vh - 2em); /* ブラウザの高さ - トップバーの高さ */
+  margin-top: 2em;
 }
 #random-image {
-  max-width: 100%; /* 画像が親要素を超えないようにする */
+  max-width: 70%; /* 画像が親要素を超えないようにする */
   max-height: 100%; /* 画像が親要素を超えないようにする */
 　height: calc(100vh - 2em); /* ブラウザの高さ - トップバーの高さ */
   object-fit: cover;
