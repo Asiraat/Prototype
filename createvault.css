@@ -68,8 +68,7 @@ main {
   height: 100vh; 
 }
 .image-container {
-  max-width: 768px;
-  max-height: 432px;
+  max-width: 50%;
   overflow: hidden;
   border-radius: 20%;
   box-shadow: 5 5 10px rgba(0, 0, 0, 0.3);
