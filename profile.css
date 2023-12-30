@@ -80,7 +80,7 @@
   height: 200px; /* resize */
   border-radius: 30%; /* rounded photo */
   border: 1px solid #000; /* black border for size adjustment */
-  box-shadow: 2px 2px 30px 0px rgba(0, 0, 0, 0.3); /* add shadow */
+  box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.3); /* add shadow */
 }
 
 /* Thin gray line under profile picture */
