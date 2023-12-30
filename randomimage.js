@@ -8,3 +8,22 @@ window.onload = function() {
   randomImageElement.src = randomImageUrl;
 };
 
+// 画像をリサイズする関数
+function resizeImage(img) {
+  const container = img.parentNode;
+  const containerWidth = container.offsetWidth;
+  const containerHeight = container.offsetHeight;
+
+  const imgWidth = img.width;
+  const imgHeight = img.height;
+
+  if (imgWidth > containerWidth || imgHeight > containerHeight) {
+    const ratioWidth = containerWidth / imgWidth;
+    const ratioHeight = containerHeight / imgHeight;
+
+    const minRatio = Math.min(ratioWidth, ratioHeight);
+
+    img.style.width = `${imgWidth * minRatio}px`;
+    img.style.height = `${imgHeight * minRatio}px`;
+  }
+}
