@@ -20,7 +20,7 @@ function resizeAndDisplayImage(url) {
 
 // ページが読み込まれた時に実行される処理
 window.onload = function() {
-  const randomIndex = Math.floor(Math.random() * 23) + 1; // 1から23のランダムな数値を生成
+  const randomIndex = Math.floor(Math.random() * 12) + 1; // 1から23のランダムな数値を生成
   const randomImageUrl = `path_to_my_image${randomIndex}.jpg`; // ランダムな数値を含む画像URLを生成
 
   // リサイズと表示処理を呼び出す
