@@ -57,17 +57,28 @@
     z-index: -1; /* Place the line behind the top-bar content */
   }
 
-/* 画像のスタイル */
-.image-container {
+
+
+
+/* 画像の配置 */
+.main {
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: calc(100vh - 2em); /* ブラウザの高さ - トップバーの高さ */
+  align-items: flex-start; /* 上部揃え */
+  height: calc(100vh - 50px); /* トップバーの高さを考慮 */
+  position: relative;
 }
 
-#random-image {
-  max-width: 100%; /* 画像が親要素を超えないようにする */
-  max-height: 100%; /* 画像が親要素を超えないようにする */
+.image-container {
+  width: 384px;
+  height: 216px;
+  overflow: hidden;
+  border-radius: 10%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 50px; /* トップバーの高さ */
+  left: 50%; /* 左端を中央に */
+  transform: translateX(-50%); /* 横方向の中央揃え */
 }
 
 
