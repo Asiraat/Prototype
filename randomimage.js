@@ -18,6 +18,21 @@ function resizeAndDisplayImage(url) {
   img.src = url;
 }
 
+// ランダムな文章を表示する関数
+function displayRandomText() {
+  const textArray = [
+    "これはランダムな文章1です。",
+    "ランダムな文章2はこちら。",
+    "この文章はランダム3です。",
+    // 他のランダムな文章を追加
+  ];
+  const randomIndex = Math.floor(Math.random() * textArray.length);
+  const randomText = textArray[randomIndex];
+
+  const textContainer = document.getElementById("random-text");
+  textContainer.textContent = randomText;
+}
+
 // ページが読み込まれた時に実行される処理
 window.onload = function() {
   const randomIndex = Math.floor(Math.random() * 12) + 1; // 1から23のランダムな数値を生成
@@ -25,4 +40,7 @@ window.onload = function() {
 
   // リサイズと表示処理を呼び出す
   resizeAndDisplayImage(randomImageUrl);
+};
+  // ランダムな文章の表示
+  displayRandomText();
 };
