@@ -87,3 +87,11 @@
   object-fit: cover; /* 画像を親要素に合わせて切り抜き */
 }
 
+
+
+.text-container {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom: 10px; /* 画像の下部からの距離 */
+}
