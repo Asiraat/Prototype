@@ -93,5 +93,5 @@
   position: absolute;
   width: 100%;
   text-align: center;
-  bottom: 40px; /* 画像の下部からの距離 */
+  top: 40px; /* 画像からの距離 */
 }
