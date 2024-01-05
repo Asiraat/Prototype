@@ -59,4 +59,4 @@ window.onload = function() {
     resizeAndDisplayImage(randomImageUrl);
     displayRandomText();
   };
-};
+});
