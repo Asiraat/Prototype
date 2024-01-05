@@ -95,3 +95,18 @@
   text-align: center;
   top: 320px; /* 画像からの距離 */
 }
+
+
+
+#regenerate-button {
+  position: absolute;
+  bottom: 10px; /* 画像下部からの距離 */
+  left: 50%; /* 画像中央 */
+  transform: translateX(-50%);
+  padding: 8px 12px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
