@@ -118,8 +118,13 @@
 .chi-text{
   position: absolute;
   top: 380px; /* 画像下部からの距離 */
-  right: 35%; /* 画像の右側に配置 */
+  right: 20%; /* 画像の右側に配置 */
   transform: translateX(-50%);
   font-family: 'mamelon3.5', sans-serif;
   font-size: 50%;
+  background-color: #bfbfbf;
+  color: black;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
 }
