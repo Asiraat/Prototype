@@ -43,3 +43,20 @@ window.onload = function() {
 };
   // ランダムな文章の表示
   displayRandomText();
+
+
+
+  // Regenerateボタンクリック時の処理
+  const regenerateButton = document.getElementById("regenerate-button");
+  regenerateButton.addEventListener("click", function() {
+    // 画像とテキストの再生成処理
+    // ページが読み込まれた時に実行される処理
+window.onload = function() {
+  const randomIndex = Math.floor(Math.random() * 12) + 1; // 1から23のランダムな数値を生成
+  const randomImageUrl = `https://Asiraat.github.io/Prototype/picture2/${randomIndex}.png`; // ランダムな数値を含む画像URLを生成
+
+    // 画像とテキストを再生成するコードをここに記述する
+    resizeAndDisplayImage(randomImageUrl);
+    displayRandomText();
+  });
+};
