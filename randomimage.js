@@ -23,7 +23,8 @@ function displayRandomText() {
   const textArray = [
     "標本調査を用いてどのくらいの数用意されているか当ててみるといい",
     "全部AI絵だよ",
-    "ボタンの反応が遅いのはJavaScriptのせいにしてもらって構わないよ",
+    "画像の表示が遅いのはJavaScriptのせいにしてもらって構わないよ",
+    "今できないでいること：LLMのローカル導入",
     // 他のランダムな文章を追加
   ];
   const randomIndex = Math.floor(Math.random() * textArray.length);
