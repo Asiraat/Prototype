@@ -43,4 +43,3 @@ window.onload = function() {
 };
   // ランダムな文章の表示
   displayRandomText();
-};
