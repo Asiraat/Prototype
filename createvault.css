@@ -113,3 +113,13 @@
   cursor: pointer;
   font-family: 'mamelon3.5', sans-serif;
 }
+
+
+.chi-text{
+  position: absolute;
+  top: 380px; /* 画像下部からの距離 */
+  right: 35%; /* 画像の右側に配置 */
+  transform: translateX(-50%);
+  font-family: 'mamelon3.5', sans-serif;
+  font-size: 50%;
+}
