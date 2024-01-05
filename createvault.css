@@ -94,6 +94,8 @@
   width: 100%;
   text-align: center;
   top: 320px; /* 画像からの距離 */
+  font-family: 'mamelon3.5', sans-serif;
+  font-size: 3;
 }
 
 
@@ -101,12 +103,13 @@
 #regenerate-button {
   position: absolute;
   bottom: 10px; /* 画像下部からの距離 */
-  left: 50%; /* 画像中央 */
+  left: 75%; /* 画像中央 */
   transform: translateX(-50%);
   padding: 8px 12px;
-  background-color: #4CAF50;
-  color: white;
+  background-color: 7ef4ff;
+  color: black;
   border: none;
-  border-radius: 4px;
+  border-radius: 7px;
   cursor: pointer;
+  font-family: 'mamelon3.5', sans-serif;
 }
