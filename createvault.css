@@ -118,7 +118,7 @@
   position: absolute;
   top: 380px; /* 画像下部からの距離 */
   right: calc(50% - 150px);
-  padding: 0px 8px;
+  padding: 4px 8px;
   font-family: 'mamelon3.5', sans-serif;
   font-size: 50%;
   background-color: #bfbfbf;
