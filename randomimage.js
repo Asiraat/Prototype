@@ -54,5 +54,5 @@ window.onload = function() {
     // 画像とテキストを再生成するコード
     resizeAndDisplayImage(randomImageUrl);
     displayRandomText();
-  };
-});
+  });
+};
