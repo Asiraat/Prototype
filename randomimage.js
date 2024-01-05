@@ -21,9 +21,9 @@ function resizeAndDisplayImage(url) {
 // ランダムな文章を表示する関数
 function displayRandomText() {
   const textArray = [
-    "これはランダムな文章1です。",
-    "ランダムな文章2はこちら。",
-    "この文章はランダム3です。",
+    "標本調査を用いてどのくらいの数用意されているか当ててみるといい",
+    "全部AI絵だよ",
+    "ボタンの反応が遅いのはJavaScriptのせいにしてもらって構わないよ",
     // 他のランダムな文章を追加
   ];
   const randomIndex = Math.floor(Math.random() * textArray.length);
