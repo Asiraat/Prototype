@@ -102,8 +102,8 @@
 
 #regenerate-button {
   position: absolute;
-  bottom: 10px; /* 画像下部からの距離 */
-  left: 75%; /* 画像中央 */
+  top: 150px; /* 画像下部からの距離 */
+  right: -100px; /* 画像の右側に配置 */
   transform: translateX(-50%);
   padding: 8px 12px;
   background-color: 7ef4ff;
