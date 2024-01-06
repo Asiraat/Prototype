@@ -127,3 +127,74 @@
   border-radius: 7px;
   cursor: pointer;
 }
+
+
+/* Thin gray line under profile picture */
+.line-under-gacha {
+  width: 70vw; /* Set the width to 70% of the viewport width */
+  height: 1px;
+  background-color: #888; /* Gray color */
+  margin-top: 40px; /* Spacing below the profile picture */
+}
+
+
+
+.box-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 80px auto 0; /* 上側にトップバーの高さ分（80px）のマージンを追加 */
+}
+/* スマートフォン用の調整 */
+@media screen and (max-width: 767px) {
+  .box-container {
+    width: 90%; /* 画面幅の90%に調整 */
+    margin-top: 30px; /* スマートフォン用のトップマージン */
+  }
+}
+
+.box-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333333;
+  background-color: #ffffff;
+  font-size: 4; /* ここを適切な値に変更してください */
+  width: 60%;
+　max-width: 400px; /* 必要に応じて最大幅を指定 */
+  height: 60px;
+  border-radius: 24px;
+  box-shadow: 8px 8px 8px 0px rgba(255, 127, 126, 0.45), -2px -2px 20px 0px rgba(255, 127, 126, 0.4);
+  margin-bottom: 40px; /* ボックス間の余白を設定します */
+  text-decoration: none; /* リンクの下線を削除します */
+  transition: transform 0.3s ease; /* ホバーエフェクトのためのトランジションを追加します */
+  font-family: 'mamelon3.5', sans-serif; /* フォントファミリーを適用 */
+}
+.box-1:hover {
+  transition: transform 0.3s ease; /* トランジションを追加 */
+  animation: pulse .4s forwards;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1.12);
+    opacity: 0.8;
+  }
+  40% { 
+    transform: scale(.98); 
+    opacity: 0.8;
+  }
+  60% { 
+    transform: scale(1.08); 
+    opacity: 0.8;
+  }
+  80% {
+    transform: scale(1.02);
+    opacity: 0.6;
+  }
+  100% {
+    transform: scale(1.05);
+    opacity: 0.8;
+  }
+}
