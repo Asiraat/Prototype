@@ -129,12 +129,12 @@
 }
 
 
-/* Thin gray line under profile picture */
+/* Thin gray line*/
 .line-under-gacha {
   width: 70vw; /* Set the width to 70% of the viewport width */
   height: 1px;
   background-color: #888; /* Gray color */
-  margin-top: 40px; /* Spacing below the profile picture */
+  top: 420px; 
 }
 
 
