@@ -77,7 +77,7 @@
   border-radius: 10%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   position: absolute;
-  top: 150px; /* トップバーの高さ */
+  top: 100px; /* トップバーの高さ */
   left: 50%; /* 左端を中央に */
   transform: translateX(-50%); /* 横方向の中央揃え */
 }
