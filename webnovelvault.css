@@ -56,3 +56,17 @@
     background-color: black; /* Black color for the line */
     z-index: -1; /* Place the line behind the top-bar content */
   }
+
+
+
+
+
+
+.box {
+  display: none;
+  /* 必要に応じてスタイリング */
+}
+
+.show {
+  display: block;
+}
