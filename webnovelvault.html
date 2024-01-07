@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ろうそく | Love Vault</title>
-  <link rel="stylesheet" href="https://Asiraat.github.io/Prototype/lovevault.css">
+  <title>ろうそく | Web Novel Vault</title>
+  <link rel="stylesheet" href="https://Asiraat.github.io/Prototype/webnovelvault.css">
   <link rel="icon" href="https://Asiraat.github.io/Prototype/favicon.ico">
   <!-- Other meta tags, scripts, etc. -->
   <style>
@@ -17,3 +17,23 @@
        <a href="https://asiraat.github.io/Prototype/" class="custom-link">ろうそく</a>
      </p>
   </div>
+ 
+  <!-- ここから検索システム -->
+  <div class="tag-list">
+    <!-- タグ一覧 -->
+    <button onclick="filterSelection('all')">すべて</button>
+    <button onclick="filterSelection('tag1')">タグ1</button>
+    <button onclick="filterSelection('tag2')">タグ2</button>
+    <!-- 追加のタグボタンを必要に応じて追加 -->
+  </div>
+
+  <div class="box-container">
+    <!-- タグ付きコンテンツ -->
+    <div class="box tag1">テキスト1（タグ1）</div>
+    <div class="box tag2">テキスト2（タグ2）</div>
+    <!-- 追加のboxを必要に応じて追加 -->
+  </div>
+
+  <script src="script.js"></script>
+
+  
