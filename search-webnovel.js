@@ -1,4 +1,20 @@
 // search-webnovel.js
+
+// script.js
+function filterSelection(tag) {
+  const boxes = document.querySelectorAll('.box');
+  
+  boxes.forEach(box => {
+    if (tag === 'all' || box.classList.contains(tag)) {
+      box.style.display = 'block';
+    } else {
+      box.style.display = 'none';
+    }
+  });
+}
+
+
+/*
 function filterSelection(tag) {
   const boxes = document.querySelectorAll('.box');
   
@@ -16,3 +32,6 @@ function filterSelection(tag) {
     });
   }
 }
+
+
+*/
