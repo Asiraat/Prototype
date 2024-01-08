@@ -82,6 +82,7 @@
  */
 
 /* Basic styles for demonstration purposes, you can modify as needed */
+/* Basic styles for demonstration purposes, you can modify as needed */
 .box-container {
   border: 1px solid #ccc;
   margin: 10px;
@@ -89,11 +90,13 @@
 }
 
 .tag-list {
-  margin-bottom: 20px;
+  position: absolute;
+  top: 80px; /* Adjust as needed based on your layout */
+  left: 10px; /* Adjust left position if needed */
+  z-index: 1; /* Ensure it's above other elements if necessary */
 }
 
 .tag-btn {
   margin-right: 10px;
   cursor: pointer;
 }
-
