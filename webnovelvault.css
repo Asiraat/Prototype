@@ -66,6 +66,8 @@
 }
 
 .box-container {
+  position: absolute;
+  text-align: center;
   border: 1px solid #eee;
   border-radius: 20px;
   box-shadow: -3px 3px 15px 0px rgba(0, 0, 0, 0.3);
