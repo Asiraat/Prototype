@@ -72,6 +72,7 @@
   padding: 10px;
   margin: 10px; /* Adjusted margin to move the box-container down */
   background-color: #fff;
+  max-width: 60%;
 }
 
 /* Styles for the tag-list */
