@@ -62,11 +62,10 @@
 
 /* Modern styles for the box-container */
 .container{
-  padding-top: 80px;
+  padding-top: 100px;
 }
 
 .box-container {
-  position: absolute;
   text-align: center;
   border: 1px solid #eee;
   border-radius: 20px;
