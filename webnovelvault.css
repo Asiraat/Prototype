@@ -79,7 +79,7 @@
   padding: 5px;
   margin: 5px; /* Adjusted margin to move the box-container down */
   background-color: #fff;
-  max-width: 65%;
+  width: 65%;
   font-family: 'mamelon3.5', sans-serif; /* apply font family */
   color: black;
 }
