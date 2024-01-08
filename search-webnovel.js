@@ -1,37 +1,22 @@
 // search-webnovel.js
 
-// script.js
-function filterSelection(tag) {
-  const boxes = document.querySelectorAll('.box');
-  
-  boxes.forEach(box => {
-    if (tag === 'all' || box.classList.contains(tag)) {
-      box.style.display = 'block';
-    } else {
-      box.style.display = 'none';
-    }
+document.addEventListener("DOMContentLoaded", function() {
+  const tagButtons = document.querySelectorAll(".tag-btn");
+  const boxContainers = document.querySelectorAll(".box-container");
+
+  tagButtons.forEach(button => {
+    button.addEventListener("click", () => {
+      const selectedTag = button.getAttribute("data-tag");
+
+      boxContainers.forEach(box => {
+        const boxTags = box.getAttribute("data-tags").split(" ");
+
+        if (boxTags.includes(selectedTag) || selectedTag === "all") {
+          box.style.display = "block";
+        } else {
+          box.style.display = "none";
+        }
+      });
+    });
   });
-}
-
-
-/*
-function filterSelection(tag) {
-  const boxes = document.querySelectorAll('.box');
-  
-  if (tag === 'all') {
-    boxes.forEach(box => {
-      box.classList.add('show');
-    });
-  } else {
-    boxes.forEach(box => {
-      if (box.classList.contains(tag)) {
-        box.classList.add('show');
-      } else {
-        box.classList.remove('show');
-      }
-    });
-  }
-}
-
-
-*/
+});
