@@ -63,12 +63,12 @@
 /* Modern styles for the box-container */
 .container{
   padding-top: 100px;
+  position: relative;
+  max-width: 100%; /* Adjust according to your layout */
+  height: 100vh; /* Assuming the container takes full height of the viewport */
   display: flex;
-  flex-wrap: wrap;
+  align-items: center;
   justify-content: center;
-  margin: 0 auto;  
-  padding: 0 20px; /* Adjust padding as needed */
-  max-width: 100%
 }
 
 .box-container {
