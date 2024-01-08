@@ -66,8 +66,9 @@
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  margin: 70px 10px 10px; /* Adjusted margin to move the box-container down */
+  margin: 10px; /* Adjusted margin to move the box-container down */
   background-color: #fff;
+  top: 70px; /* 自分で追加 */
 }
 
 /* Styles for the tag-list */
