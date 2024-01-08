@@ -19,21 +19,32 @@
   </div>
  
   <!-- ここから検索システム -->
-  <div class="tag-list">
-    <!-- タグ一覧 -->
-    <button onclick="filterSelection('all')">すべて</button>
-    <button onclick="filterSelection('tag1')">タグ1</button>
-    <button onclick="filterSelection('tag2')">タグ2</button>
-    <!-- 追加のタグボタンを必要に応じて追加 -->
-  </div>
 
-  <div class="box-container">
-    <!-- タグ付きコンテンツ -->
-    <div class="box tag1">テキスト1（タグ1）</div>
-    <div class="box tag2">テキスト2（タグ2）</div>
-    <!-- 追加のboxを必要に応じて追加 -->
-  </div>
+<div class="tag-list">
+  <button class="tag-btn" data-tag="tag1">Tag 1</button>
+  <button class="tag-btn" data-tag="tag2">Tag 2</button>
+  <button class="tag-btn" data-tag="tag3">Tag 3</button>
+  <!-- Add more buttons for additional tags -->
+</div>
 
+<div class="container">
+  <div class="box-container" data-tags="tag1">
+    <h2>Box 1</h2>
+    <p>This is box 1 with tags: tag1</p>
+  </div>
+  <div class="box-container" data-tags="tag2">
+    <h2>Box 2</h2>
+    <p>This is box 2 with tags: tag2</p>
+  </div>
+  <div class="box-container" data-tags="tag3">
+    <h2>Box 3</h2>
+    <p>This is box 3 with tags: tag3</p>
+  </div>
+  <!-- Add more box-containers with different tags -->
+</div>
+
+
+  
   <script src="https://Asiraat.github.io/Prototype/search-webnovel.js"></script>
 </body>
 </html>
