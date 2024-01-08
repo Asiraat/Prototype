@@ -1,5 +1,32 @@
 // search-webnovel.js
+document.addEventListener("DOMContentLoaded", function() {
+  const collapseBtn = document.querySelector(".collapse-btn");
+  const tagList = document.querySelector(".tag-list");
+  const boxContainers = document.querySelectorAll(".box-container");
+  const tagsToShow = ['all', 'tag1', 'tag2', 'tag3']; // Tags to show when "Tags" button is clicked
 
+  collapseBtn.addEventListener("click", () => {
+    tagList.classList.toggle("show-tags");
+
+    if (tagList.classList.contains("show-tags")) {
+      boxContainers.forEach(box => {
+        const boxTags = box.getAttribute("data-tags").split(" ");
+
+        if (tagsToShow.some(tag => boxTags.includes(tag))) {
+          box.style.display = "block";
+        } else {
+          box.style.display = "none";
+        }
+      });
+    } else {
+      boxContainers.forEach(box => {
+        box.style.display = "block"; // Show all boxes when the "Tags" button is collapsed
+      });
+    }
+  });
+});
+
+/*
 document.addEventListener("DOMContentLoaded", function() {
   const collapseBtn = document.querySelector(".collapse-btn");
   const tagList = document.querySelector(".tag-list");
@@ -23,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
 });
-
+*/
 /*
 document.addEventListener("DOMContentLoaded", function() {
   const tagButtons = document.querySelectorAll(".tag-btn");
