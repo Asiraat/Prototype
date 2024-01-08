@@ -20,10 +20,13 @@
  
   <!-- ここから検索システム -->
 
+<!-- Add an "All" button to the tag-list -->
 <div class="tag-list">
+  <button class="tag-btn" data-tag="all">All</button>
   <button class="tag-btn" data-tag="tag1">Tag 1</button>
   <button class="tag-btn" data-tag="tag2">Tag 2</button>
   <button class="tag-btn" data-tag="tag3">Tag 3</button>
+  <button class="tag-btn" data-tag="tag3">Tag 4</button>
   <!-- Add more buttons for additional tags -->
 </div>
 
@@ -39,6 +42,10 @@
   <div class="box-container" data-tags="tag3">
     <h2>Box 3</h2>
     <p>This is box 3 with tags: tag3</p>
+  </div>  
+  <div class="box-container" data-tags="tag4 tag1">
+    <h2>Box 4</h2>
+    <p>This is box 3 with tags: tag1,tag4</p>
   </div>
   <!-- Add more box-containers with different tags -->
 </div>
