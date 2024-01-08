@@ -63,21 +63,21 @@
 /* Modern styles for the box-container */
 .container{
   padding-top: 100px;
-  position: relative;
-  max-width: 100%; /* Adjust according to your layout */
-  align-items: center;
-  justify-content: center;
+　display: flex;
+  justify-content: center; /* 水平方向の中央揃え */
+  align-items: flex-start; /* 要素を上端に配置し、縦に並べる */
 }
 
 .box-container {
+　display: flex;
+  flex-direction: column; /* 要素を縦方向に配置 */
   border: 1px solid #eee;
   border-radius: 20px;
   box-shadow: -3px 3px 15px 0px rgba(0, 0, 0, 0.3);
-  padding: 10px;
-  margin: 10px; /* Adjusted margin to move the box-container down */
+  padding: 5px;
+  margin: 5px; /* Adjusted margin to move the box-container down */
   background-color: #fff;
   max-width: 65%;
-  align-items: center;
   font-family: 'mamelon3.5', sans-serif; /* apply font family */
   color: black;
 }
