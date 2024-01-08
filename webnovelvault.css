@@ -59,48 +59,50 @@
 
 
 
-/* 
-.box-container {
-  display: flex;
-  flex-wrap: wrap;
-}
-.box {
-  display: none;
-  width: 200px;
-  height: 100px;
-  border: 1px solid #000;
-  position: absolute;
-  top: 80px;
-  left: 50%;
-  transform: translateX(-50%);
-  text-align: center;
-  line-height: 100px;
-}
-.show {
-  display: block;
-}
- */
 
-/* Basic styles for demonstration purposes, you can modify as needed */
-/* Basic styles for demonstration purposes, you can modify as needed */
+/* Modern styles for the box-container */
 .box-container {
-  border: 1px solid #ccc;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
   margin: 10px;
-  padding: 10px;
-  /* ここから括弧閉じまで僕が追加 */
-  position: absolute;
-  top: 110px;
-  text-align: center;
+  background-color: #fff;
 }
 
+/* Styles for the tag-list */
 .tag-list {
-  position: absolute;
+  position: fixed; /* position: absolute; から変えた、直す時用 */
   top: 80px; /* Adjust as needed based on your layout */
-  left: 10px; /* Adjust left position if needed */
+  left: 50%; /* Adjust center position if needed */
+  transform: translateX(-50%);
   z-index: 1; /* Ensure it's above other elements if necessary */
 }
 
 .tag-btn {
   margin-right: 10px;
   cursor: pointer;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 20px;
+  background-color: #3498db;
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
 }
+
+.tag-btn:hover {
+  background-color: #2980b9;
+}
+
+/* Style the "All" button differently */
+.tag-btn[data-tag="all"] {
+  background-color: #2ecc71;
+}
+
+.tag-btn[data-tag="all"]:hover {
+  background-color: #27ae60;
+}
+
+
