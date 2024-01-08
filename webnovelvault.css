@@ -77,6 +77,9 @@
   margin: 10px; /* Adjusted margin to move the box-container down */
   background-color: #fff;
   max-width: 65%;
+  align-items: center;
+  font-family: 'mamelon3.5', sans-serif; /* apply font family */
+  color: black;
 }
 
 /* Styles for the tag-list */
