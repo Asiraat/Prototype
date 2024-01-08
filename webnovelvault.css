@@ -64,13 +64,15 @@
 .container{
   padding-top: 100px;
 　display: flex;
-  justify-content: center; /* 水平方向の中央揃え */
+  flex-direction: column;
   align-items: center; /* 水平方向の中央揃え */
 }
 
 .box-container {
 　display: flex;
-  flex-direction: column; /* 要素を縦方向に配置 */
+  flex-direction: column; /* 縦に配置 */
+  align-items: center; /* 水平方向の中央揃え */
+  justify-content: center; /* 水平方向の中央揃え */
   border: 1px solid #eee;
   border-radius: 20px;
   box-shadow: -3px 3px 15px 0px rgba(0, 0, 0, 0.3);
