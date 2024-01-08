@@ -61,6 +61,11 @@
 
 
 /* Modern styles for the box-container */
+.container{
+  margin-top: 80px;
+  /*   padding-top: 80px;  */
+}
+
 .box-container {
   border: 1px solid #eee;
   border-radius: 8px;
@@ -68,7 +73,6 @@
   padding: 20px;
   margin: 10px; /* Adjusted margin to move the box-container down */
   background-color: #fff;
-  padding-top: 80px; /* Adjust the value to create space for the fixed top bar */　
 }
 
 /* Styles for the tag-list */
