@@ -62,8 +62,7 @@
 
 /* Modern styles for the box-container */
 .container{
-  margin-top: 80px;
-  /*   padding-top: 80px;  */
+  padding-top: 80px;
 }
 
 .box-container {
