@@ -59,13 +59,11 @@
 
 
 
-/* 検索システム */
+/* 
 .box-container {
   display: flex;
   flex-wrap: wrap;
 }
-
-/* styles.css */
 .box {
   display: none;
   width: 200px;
@@ -78,8 +76,24 @@
   text-align: center;
   line-height: 100px;
 }
-
 .show {
   display: block;
+}
+ */
+
+/* Basic styles for demonstration purposes, you can modify as needed */
+.box-container {
+  border: 1px solid #ccc;
+  margin: 10px;
+  padding: 10px;
+}
+
+.tag-list {
+  margin-bottom: 20px;
+}
+
+.tag-btn {
+  margin-right: 10px;
+  cursor: pointer;
 }
 
