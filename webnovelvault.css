@@ -1,4 +1,4 @@
-/* lovevault.css */
+/* webnovelvault.css */
 /* font settings */
 @font-face {
     font-family: 'mamelon3.5'; /* フォントファミリーの名前を指定 */
@@ -63,17 +63,22 @@
 /* Modern styles for the box-container */
 .container{
   padding-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;  
+  padding: 0 20px; /* Adjust padding as needed */
+  max-width: 100%
 }
 
 .box-container {
-  text-align: center;
   border: 1px solid #eee;
   border-radius: 20px;
   box-shadow: -3px 3px 15px 0px rgba(0, 0, 0, 0.3);
   padding: 10px;
   margin: 10px; /* Adjusted margin to move the box-container down */
   background-color: #fff;
-  max-width: 60%;
+  max-width: 65%;
 }
 
 /* Styles for the tag-list */
