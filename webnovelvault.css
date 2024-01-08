@@ -75,12 +75,60 @@
 }
 
 /* Styles for the tag-list */
+/* Collapsible tag frame styles */
+.tag-frame {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 2;
+}
+.collapse-btn {
+  cursor: pointer;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 20px;
+  background-color: #3498db;
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+.collapse-btn:hover {
+  background-color: #2980b9;
+}
 .tag-list {
-  position: fixed; /* position: absolute; から変えた、直す時用 */
-  top: 80px; /* Adjust as needed based on your layout */
-  left: 50%; /* Adjust center position if needed */
+  display: none;
+  margin-top: 8px;
+}
+.tag-btn {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 20px;
+  background-color: #3498db;
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+.tag-btn:hover {
+  background-color: #2980b9;
+}
+
+
+
+
+
+/* position: absolute; から変えた、直す時用 */
+/*
+.tag-list {
+  position: fixed; 
+  top: 80px; 
+  left: 50%; 
   transform: translateX(-50%);
-  z-index: 1; /* Ensure it's above other elements if necessary */
+  z-index: 1; 
 }
 
 .tag-btn {
@@ -100,7 +148,9 @@
   background-color: #2980b9;
 }
 
+*/
 /* Style the "All" button differently */
+/*
 .tag-btn[data-tag="all"] {
   background-color: #2ecc71;
 }
@@ -109,4 +159,4 @@
   background-color: #27ae60;
 }
 
-
+*/
