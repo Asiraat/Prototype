@@ -80,6 +80,7 @@
   margin: 5px; /* Adjusted margin to move the box-container down */
   background-color: #fff;
   width: 65%;
+  height: 4em;
   font-family: 'mamelon3.5', sans-serif; /* apply font family */
   color: black;
 }
