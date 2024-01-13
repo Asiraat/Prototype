@@ -41,7 +41,7 @@ function displayRandomText() {
 
 // ページが読み込まれた時に実行される処理
 window.onload = function() {
-  const randomIndex = Math.floor(Math.random() * 12) + 1; // 1から23のランダムな数値を生成
+  const randomIndex = Math.floor(Math.random() * 15) + 1; // 1から15のランダムな数値を生成
   const randomImageUrl = `https://Asiraat.github.io/Prototype/picture2/${randomIndex}.png`; // ランダムな数値を含む画像URLを生成
 
   // リサイズと表示処理を呼び出す
@@ -54,7 +54,7 @@ window.onload = function() {
   // Regenerateボタンクリック時の処理を追加
   const regenerateButton = document.getElementById("regenerate-button");
   regenerateButton.addEventListener("click", function() {
-    const randomIndex = Math.floor(Math.random() * 12) + 1; // 1から23のランダムな数値を生成
+    const randomIndex = Math.floor(Math.random() * 15) + 1; // 1から15のランダムな数値を生成
     const randomImageUrl = `https://Asiraat.github.io/Prototype/picture2/${randomIndex}.png`; // ランダムな数値を含む画像URLを生成
 
     // 画像とテキストを再生成するコード
