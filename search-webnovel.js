@@ -1,7 +1,7 @@
 // search-webnovel.js
 document.addEventListener('DOMContentLoaded', function() {
   const collapseBtn = document.querySelector('.collapse-btn');
-  const tagsContent = document.querySelector('.tags-content');
+  const tagsContent = document.querySelector('.tag-list');
 
   collapseBtn.addEventListener('click', function() {
     if (tagsContent.style.display === 'none' || tagsContent.style.display === '') {
