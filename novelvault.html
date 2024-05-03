@@ -19,66 +19,51 @@
   </div>
 
 
-<div id="box-container" class="box-container"></div>
+<body>
+    <div id="box-container"></div>
 
     <script>
-        // Excelファイルのパス
-        const excelFilePath = 'https://Asiraat.github.io/Prototype/book-list.xlsx';
+        // Googleスプレッドシートの.xlsxファイルのURL
+        const spreadsheetURL = 'https://docs.google.com/spreadsheets/d/1UX290pf7WhGGnlNCSRhkad2tvn29L4zKGFuE1l45r04/edit#gid=0';
 
         // ページが読み込まれたときに実行する関数
         window.onload = async () => {
             try {
-                const books = await readExcel(excelFilePath);
+                const response = await fetch(spreadsheetURL);
+                const data = await response.text();
+                const books = parseCSV(data);
                 displayBooks(books);
             } catch (error) {
                 console.error('Error:', error);
             }
         };
 
-        // Excelファイルを読み込む関数
-        async function readExcel(file) {
-            const workbook = await ExcelJS.readFile(file);
-            const worksheet = workbook.getWorksheet(1); // 1番目のシートを使用
-
+        // CSVデータをパースする関数
+        function parseCSV(csv) {
+            const lines = csv.split('\n');
             const books = [];
-            worksheet.eachRow({ includeEmpty: false }, (row, rowNumber) => {
-                if (rowNumber !== 1) { // 1行目はヘッダーなのでスキップ
-                    const title = row.getCell(1).value;
-                    const author = row.getCell(2).value;
-                    books.push({ title, author });
-                }
-            });
-
+            for (let line of lines) {
+                const [title, author, coverURL] = line.split(',');
+                books.push({ title, author, coverURL });
+            }
             return books;
         }
 
         // 本の情報を表示する関数
         function displayBooks(books) {
             const boxContainer = document.getElementById('box-container');
-            boxContainer.innerHTML = '';
             books.forEach(book => {
-                const box = document.createElement('div');
-                box.classList.add('box');
-
-                const image = document.createElement('img');
-                image.src = `book_covers/${book.title}.jpg`;
-                image.alt = book.title;
-
-                const title = document.createElement('h3');
-                title.textContent = book.title;
-
-                const author = document.createElement('p');
-                author.textContent = book.author;
-
-                box.appendChild(image);
-                box.appendChild(title);
-                box.appendChild(author);
-
-                boxContainer.appendChild(box);
+                const boxElement = document.createElement('div');
+                boxElement.classList.add('box');
+                boxElement.innerHTML = `
+                    <img src="${book.coverURL}" alt="${book.title}">
+                    <h3>${book.title}</h3>
+                    <p>${book.author}</p>
+                `;
+                boxContainer.appendChild(boxElement);
             });
         }
     </script>
-  
  
 </body>
 </html>
