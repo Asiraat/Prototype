@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ろうそく | Love Vault</title>
+  <link rel="stylesheet" href="musicvault.css">
+  <link rel="icon" href="https://Asiraat.github.io/Prototype/favicon.ico">
+  <!-- Other meta tags, scripts, etc. -->
+  <style>
+    /* Add CSS styles here if needed for this specific element */
+  </style>
+</head>
+<body>
+  <div class="top-bar">
+     <p class="top-bar-text">
+       <a href="https://asiraat.github.io/Prototype/" class="custom-link">ろうそく</a>
+     </p>
+  </div>
+  <div class="youtube-icon">
+    <img src="https://Asiraat.github.io/Prototype/picture/kani.ico" alt="プロフィール写真">
+  </div>
+    <div class="container">
+        <div class="box" data-link="https://www.youtube.com/playlist?list=PL3MPhEsfgh11QnQHRx_f2UjPGRXws6ZIb">
+            <img src="/path/to/image1.jpg" alt="イラスト1">
+            <span>YouTubeリスト1</span>
+        </div>
+        <div class="box" data-link="https://www.youtube.com/playlist?list=PLexample2">
+            <img src="/path/to/image2.jpg" alt="イラスト2">
+            <span>YouTubeリスト2</span>
+        </div>
+        <div class="box" data-link="https://www.youtube.com/playlist?list=PLexample3">
+            <img src="/path/to/image3.jpg" alt="イラスト3">
+            <span>YouTubeリスト3</span>
+        </div>
+        <div class="box" data-link="https://www.youtube.com/playlist?list=PLexample4">
+            <img src="/path/to/image4.jpg" alt="イラスト4">
+            <span>YouTubeリスト4</span>
+        </div>
+        <div class="box" data-link="https://www.youtube.com/playlist?list=PLexample5">
+            <img src="/path/to/image5.jpg" alt="イラスト5">
+            <span>YouTubeリスト5</span>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('.box').forEach(box => {
+            box.addEventListener('click', function() {
+                window.location.href = this.getAttribute('data-link');
+            });
+        });
+    </script>
+</body>
+</html>
