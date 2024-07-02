@@ -73,6 +73,7 @@
   width: 200px; /* resize */
   height: 200px; /* resize */
   box-shadow: 10px 18px 42px -5px #feb4b4;
+  border-radius: 20%;
 }
 
 
