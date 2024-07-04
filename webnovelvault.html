@@ -20,12 +20,15 @@
  
   <!-- ここから検索システム -->
 
-    <h1>タグ検索ウェブサイト</h1>
+   <h1>タグ検索ウェブサイト</h1>
     
-    <div id="tag-filter">
-        <h2>タグ選択</h2>
-        <label><input type="checkbox" name="tag" value="tag1"> Tag 1</label>
-        <label><input type="checkbox" name="tag" value="tag2"> Tag 2</label>
+    <div id="tag-filter-container">
+        <button id="toggle-tag-filter">タグ選択を表示/非表示</button>
+        <div id="tag-filter" class="hidden">
+            <h2>タグ選択</h2>
+            <label><input type="checkbox" name="tag" value="tag1"> Tag 1</label>
+            <label><input type="checkbox" name="tag" value="tag2"> Tag 2</label>
+        </div>
     </div>
 
     <div id="box-container">
@@ -52,7 +55,6 @@
             </div>
         </div>
     </div>
-
   
   <script src="https://Asiraat.github.io/Prototype/search-webnovel.js"></script>
 </body>
