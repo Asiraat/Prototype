@@ -20,37 +20,38 @@
  
   <!-- ここから検索システム -->
 
-<!-- Add an "All" button to the tag-list -->
-  <button class="collapse-btn">Tags</button>
-<div class="tag-list">
-  <button class="tag-btn" data-tag="all">All</button>
-  <button class="tag-btn" data-tag="tag1">Tag 1</button>
-  <button class="tag-btn" data-tag="tag2">Tag 2</button>
-  <button class="tag-btn" data-tag="tag3">Tag 3</button>
-  <button class="tag-btn" data-tag="tag3">Tag 4</button>
-  <!-- Add more buttons for additional tags -->
-</div>
+    <h1>タグ検索ウェブサイト</h1>
+    
+    <div id="tag-filter">
+        <h2>タグ選択</h2>
+        <label><input type="checkbox" name="tag" value="tag1"> Tag 1</label>
+        <label><input type="checkbox" name="tag" value="tag2"> Tag 2</label>
+    </div>
 
-<div class="container">
-  <div class="box-container" data-tags="tag1">
-    <p><a href="https://truthsocial.com/@coiluck" target="_blank" rel="noopener noreferrer" style=color:#000000 font size=2em;>Box 1</a></p>
-    <p>This is box 1 with tags: tag1</p>
-  </div>
-  <div class="box-container" data-tags="tag2">
-    <h2>Box 2</h2>
-    <p>This is box 2 with tags: tag2</p>
-  </div>
-  <div class="box-container" data-tags="tag3">
-    <h2>Box 3</h2>
-    <p>This is box 3 with tags: tag3</p>
-  </div>  
-  <div class="box-container" data-tags="tag4 tag1">
-    <h2>Box 4</h2>
-    <p>This is box 3 with tags: tag1,tag4</p>
-  </div>
-  <!-- Add more box-containers with different tags -->
-</div>
-
+    <div id="box-container">
+        <div class="box" data-tags="tag1">
+            <h3>Box 1</h3>
+            <p>Box 1の内容要約です。</p>
+            <div class="tags">
+                <span class="tag">tag1</span>
+            </div>
+        </div>
+        <div class="box" data-tags="tag2">
+            <h3>Box 2</h3>
+            <p>Box 2の内容要約です。</p>
+            <div class="tags">
+                <span class="tag">tag2</span>
+            </div>
+        </div>
+        <div class="box" data-tags="tag1 tag2">
+            <h3>Box 3</h3>
+            <p>Box 3の内容要約です。</p>
+            <div class="tags">
+                <span class="tag">tag1</span>
+                <span class="tag">tag2</span>
+            </div>
+        </div>
+    </div>
 
   
   <script src="https://Asiraat.github.io/Prototype/search-webnovel.js"></script>
