@@ -65,11 +65,25 @@ body {
     margin: 0 auto;
     padding: 20px;
 }
-#tag-filter {
+#tag-filter-container {
     margin-bottom: 20px;
 }
+#toggle-tag-filter {
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+#tag-filter {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 10px;
+}
+#tag-filter.hidden {
+    display: none;
+}
 #tag-filter label {
-    margin-right: 10px;
+    display: block;
+    margin-bottom: 5px;
 }
 .box {
     border: 1px solid #ccc;
