@@ -59,114 +59,30 @@
 
 
 
-
-/* Modern styles for the box-container */
-.container {
-  padding-top: 100px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; /* 垂直方向に中央揃え */
+body {
+    font-family: 'mamelon3.5'
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
 }
-.box-container {
-　display: flex;
-  flex-direction: column; /* 縦に配置 */
-  align-items: center; /* 水平方向の中央揃え */
-  justify-content: center; /* 水平方向の中央揃え */
-  border: 1px solid #eee;
-  border-radius: 20px;
-  box-shadow: -3px 3px 15px 0px rgba(0, 0, 0, 0.3);
-  padding: 5px;
-  margin: 5px; /* Adjusted margin to move the box-container down */
-  background-color: #fff;
-  width: 65%;
-  font-family: 'mamelon3.5', sans-serif; /* apply font family */
-  color: black;
+#tag-filter {
+    margin-bottom: 20px;
 }
-
-/* Styles for the tag-list */
-/* Collapsible tag frame styles */
-.tag-frame {
-  position: fixed;
-  top: 70px;
-  left: 20px;
-  z-index: 2;
+#tag-filter label {
+    margin-right: 10px;
 }
-.collapse-btn {
-  cursor: pointer;
-  padding: 8px 16px;
-  border: none;
-  border-radius: 20px;
-  background-color: #3498db;
-  color: #fff;
-  font-family: 'Arial', sans-serif;
-  font-size: 14px;
-  transition: background-color 0.3s ease;
+.box {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
 }
-.collapse-btn:hover {
-  background-color: #2980b9;
+.tags {
+    margin-top: 10px;
 }
-.tag-list {
-  display: none;
-  margin-top: 8px;
+.tag {
+    background-color: #f0f0f0;
+    padding: 2px 5px;
+    border-radius: 3px;
+    margin-right: 5px;
+    font-size: 0.8em;
 }
-.tag-btn {
-  margin-right: 10px;
-  margin-bottom: 10px;
-  cursor: pointer;
-  padding: 8px 16px;
-  border: none;
-  border-radius: 20px;
-  background-color: #3498db;
-  color: #fff;
-  font-family: 'Arial', sans-serif;
-  font-size: 14px;
-  transition: background-color 0.3s ease;
-}
-.tag-btn:hover {
-  background-color: #2980b9;
-}
-
-
-
-
-
-/* position: absolute; から変えた、直す時用 */
-/*
-.tag-list {
-  position: fixed; 
-  top: 80px; 
-  left: 50%; 
-  transform: translateX(-50%);
-  z-index: 1; 
-}
-
-.tag-btn {
-  margin-right: 10px;
-  cursor: pointer;
-  padding: 8px 16px;
-  border: none;
-  border-radius: 20px;
-  background-color: #3498db;
-  color: #fff;
-  font-family: 'Arial', sans-serif;
-  font-size: 14px;
-  transition: background-color 0.3s ease;
-}
-
-.tag-btn:hover {
-  background-color: #2980b9;
-}
-
-*/
-/* Style the "All" button differently */
-/*
-.tag-btn[data-tag="all"] {
-  background-color: #2ecc71;
-}
-
-.tag-btn[data-tag="all"]:hover {
-  background-color: #27ae60;
-}
-
-*/
