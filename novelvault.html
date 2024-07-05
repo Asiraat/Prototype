@@ -18,50 +18,9 @@
      </p>
   </div>
 
-    <div id="box-container"></div>
+    <div class="box-container"></div>
 
-    <script>
-        // Googleスプレッドシートの.xlsxファイルのURL
-        const spreadsheetURL = 'https://docs.google.com/spreadsheets/d/1UX290pf7WhGGnlNCSRhkad2tvn29L4zKGFuE1l45r04/edit#gid=0';
 
-        // ページが読み込まれたときに実行する関数
-        window.onload = async () => {
-            try {
-                const response = await fetch(spreadsheetURL);
-                const data = await response.text();
-                const books = parseCSV(data);
-                displayBooks(books);
-            } catch (error) {
-                console.error('Error:', error);
-            }
-        };
-
-        // CSVデータをパースする関数
-        function parseCSV(csv) {
-            const lines = csv.split('\n');
-            const books = [];
-            for (let line of lines) {
-                const [title, author, coverURL] = line.split(',');
-                books.push({ title, author, coverURL });
-            }
-            return books;
-        }
-
-        // 本の情報を表示する関数
-        function displayBooks(books) {
-            const boxContainer = document.getElementById('box-container');
-            books.forEach(book => {
-                const boxElement = document.createElement('div');
-                boxElement.classList.add('box');
-                boxElement.innerHTML = `
-                    <img src="${book.coverURL}" alt="${book.title}">
-                    <h3>${book.title}</h3>
-                    <p>${book.author}</p>
-                `;
-                boxContainer.appendChild(boxElement);
-            });
-        }
-    </script>
  
 </body>
 </html>
