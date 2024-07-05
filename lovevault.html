@@ -24,3 +24,20 @@
   <a href="https://asiraat.github.io/Prototype/webnovelvault" class="box-1">Web Novel Vault</a>
   <a href="https://asiraat.github.io/Prototype/createvault.html" class="box-1">ガチャ・その他制作物</a>
 </div>
+   <script>
+        const box = document.querySelector('.box-1');
+        let animationTimeout;
+
+        function startAnimation() {
+            clearTimeout(animationTimeout);
+            box.classList.add('animate');
+            animationTimeout = setTimeout(() => {
+                box.classList.remove('animate');
+            }, 400);
+        }
+
+        box.addEventListener('mouseenter', startAnimation);
+        box.addEventListener('click', startAnimation);
+   </script>
+</body>
+</html>
