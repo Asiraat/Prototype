@@ -100,9 +100,8 @@
   transition: transform 0.3s ease; /* ホバーエフェクトのためのトランジションを追加します */
   font-family: 'mamelon3.5', sans-serif; /* フォントファミリーを適用 */
 }
-.box-1:hover {
-  transition: transform 0.3s ease; /* トランジションを追加 */
-  animation: pulse .4s forwards;
+.box-1.animate {
+            animation: pulse .4s forwards;
 }
 @keyframes pulse {
   0% {
