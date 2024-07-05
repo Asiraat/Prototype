@@ -56,3 +56,15 @@
     background-color: black; /* Black color for the line */
     z-index: -1; /* Place the line behind the top-bar content */
   }
+
+
+
+.box-container {
+　　 margin-top: 80px;
+    text-align: center;
+    
+}
+
+
+
+
