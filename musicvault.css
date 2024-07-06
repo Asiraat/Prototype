@@ -111,9 +111,8 @@ body {
     overflow: hidden;
     position: relative;
 }
-.box:hover {
-  transition: transform 0.3s ease; /* トランジションを追加 */
-  animation: pulse .4s forwards;
+.box-1.animate {
+            animation: pulse .4s forwards;
 }
 @keyframes pulse {
   0% {
