@@ -25,19 +25,21 @@
   <a href="https://asiraat.github.io/Prototype/createvault.html" class="box-1">ガチャ・その他制作物</a>
 </div>
    <script>
-        const box = document.querySelector('.box-1');
-        let animationTimeout;
+        const boxes = document.querySelectorAll('.box-1');
 
-        function startAnimation() {
-            clearTimeout(animationTimeout);
+        function startAnimation(event) {
+            const box = event.currentTarget;
+            clearTimeout(box.animationTimeout);
             box.classList.add('animate');
-            animationTimeout = setTimeout(() => {
+            box.animationTimeout = setTimeout(() => {
                 box.classList.remove('animate');
             }, 400);
         }
 
-        box.addEventListener('mouseenter', startAnimation);
-        box.addEventListener('click', startAnimation);
+        boxes.forEach(box => {
+            box.addEventListener('mouseenter', startAnimation);
+            box.addEventListener('click', startAnimation);
+        });
    </script>
 </body>
 </html>
