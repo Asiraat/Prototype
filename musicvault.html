@@ -65,6 +65,24 @@
                 window.location.href = this.getAttribute('data-link');
             });
         });
+
+
+    
+        const boxes = document.querySelectorAll('.box-1');
+
+        function startAnimation(event) {
+            const box = event.currentTarget;
+            clearTimeout(box.animationTimeout);
+            box.classList.add('animate');
+            box.animationTimeout = setTimeout(() => {
+                box.classList.remove('animate');
+            }, 400);
+        }
+
+        boxes.forEach(box => {
+            box.addEventListener('mouseenter', startAnimation);
+            box.addEventListener('click', startAnimation);
+        });
     </script>
 </body>
 </html>
