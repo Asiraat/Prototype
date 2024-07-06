@@ -111,7 +111,7 @@ body {
     overflow: hidden;
     position: relative;
 }
-.box-1.animate {
+.box.animate {
             animation: pulse .4s forwards;
 }
 @keyframes pulse {
