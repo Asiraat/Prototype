@@ -62,7 +62,7 @@
     <script>
         document.querySelectorAll('.box').forEach(box => {
             box.addEventListener('click', function() {
-                window.location.href = this.getAttribute('data-link');
+                window.open(this.getAttribute('data-link'), '_blank');
             });
         });
 
