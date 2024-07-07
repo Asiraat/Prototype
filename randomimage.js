@@ -38,7 +38,7 @@ function displayImage(resizedImageUrl) {
 
 function displayErrorImage() {
   const randomImageElement = document.getElementById("random-image");
-  randomImageElement.src = 'path/to/error-image.png';  // エラー時の画像パスを設定してください
+  randomImageElement.src = 'path/to/error-image.png';  // エラー時の画像パスを設定 - いらない？
   randomImageElement.alt = '画像を読み込めませんでした';
 }
 
