@@ -74,7 +74,8 @@ body {
     background-color: #BEFF7D;
     color: black;
     border: none;
-    border-radius: 4px;
+    border-radius: 8px;
+    font-family: 'mamelon3.5', sans-serif;
 }
 
 #tag-filter {
@@ -83,7 +84,6 @@ body {
     margin-top: 10px;
     background-color: white;
     border-radius: 4px;
-    font-family: 'mamelon3.5', sans-serif;
 }
 
 #tag-filter.hidden {
@@ -100,7 +100,7 @@ body {
     padding: 15px;
     margin-bottom: 15px;
     background-color: white;
-    border-radius: 8px;
+    border-radius: 20px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     transition: box-shadow 0.3s ease;
 }
