@@ -39,14 +39,14 @@ function displayImage(resizedImageUrl) {
 function displayErrorImage() {
   const randomImageElement = document.getElementById("random-image");
   randomImageElement.src = 'path/to/error-image.png';  // エラー時の画像パスを設定 - いらない？
-  randomImageElement.alt = '画像を読み込めませんでした';
+  randomImageElement.alt = '画像、読み込めませんでした';
 }
 
 // テキストデータの準備
 const textArray = [
   "標本調査を用いてどのくらいの数用意されているか当ててみるといい",
   "全部AI絵だよ",
-  "画像の表示が遅いのはJavaScriptのせいにしてもらって構わないよ",
+  "AVIF画像にして少しだけ早くなった？",
   "標本調査を用いてどのくらいの数用意されているか当ててみるといい",
   "このフォントって機械彫刻用標準書体みたいでいいね",
   "ここに30字以上入力するとスマホのレイアウトが崩れちゃう",
