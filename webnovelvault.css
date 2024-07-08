@@ -62,7 +62,7 @@
 body {
     font-family: mamelon3.5, sans-serif;
     max-width: 800px;
-    margin: 0 auto;
+    margin: 5% auto 0 auto;
     padding: 20px;
     background-color: #f5f5f5;
 }
