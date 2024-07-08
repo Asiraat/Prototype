@@ -11,10 +11,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     toggleButton.addEventListener('click', () => {
         tagFilter.classList.toggle('hidden');
-        toggleButton.textContent = tagFilter.classList.contains('hidden') 
-            ? 'タグ選択を表示' 
-            : 'タグ選択を非表示';
+        updateButtonText();
     });
+
+    function updateButtonText() {
+        toggleButton.textContent = tagFilter.classList.contains('hidden') 
+            ? 'タグを表示' 
+            : 'タグを非表示';
+    }
 
     function filterBoxes() {
         const selectedTags = Array.from(checkboxes)
@@ -27,4 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
             box.style.display = shouldShow ? 'block' : 'none';
         });
     }
+
+    // 初期状態でボタンのテキストを設定
+    updateButtonText();
 });
