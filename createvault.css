@@ -141,7 +141,7 @@
 
 .link-boxes-container {
   position: absolute;
-  top: 500px; /* 区切り線の下に配置 */
+  top: 530px; /* 区切り線の下に配置 */
   left: 0;
   width: 100%;
   display: flex;
