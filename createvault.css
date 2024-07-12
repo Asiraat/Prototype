@@ -134,7 +134,7 @@
   position: absolute;
   top: 430px; /* Regenerateボタンの下に配置 */
   width: 70%;
-  align-items: center;
+  left: 15%;
   height: 1px;
   background-color: #888;
 }
@@ -145,8 +145,9 @@
   left: 0;
   width: 100%;
   display: flex;
-  justify-content: center;
-  gap: 20px; /* ボックス間の間隔 */
+  flex-direction: column; /* 縦方向に並べる */
+  align-items: center; /* 中央揃え */
+  gap: 10px; /* ボックス間の間隔 */
 }
 
 .link-box {
@@ -157,6 +158,8 @@
   border-radius: 5px;
   font-family: 'mamelon3.5', sans-serif;
   transition: background-color 0.3s;
+  width: 200px; /* ボックスの幅を固定 */
+  text-align: center;
 }
 
 .link-box:hover {
