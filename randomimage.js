@@ -57,8 +57,8 @@ function displayRandomText() {
 }
 
 // GitHubの正しい画像URLを生成する関数
-function getGitHubImageUrl(index, format = 'avif') {
-  return `https://raw.githubusercontent.com/Asiraat/Prototype/main/picture3/${index}.${format}`;
+function getGitHubImageUrl(index) {
+  return `https://raw.githubusercontent.com/Asiraat/Prototype/main/picture3/${index}.avif`;
 }
 
 // ブラウザがAVIFをサポートしているか確認
