@@ -60,14 +60,14 @@
 
 
 .box-container {
-　　 margin-top: 80px;
+　　 margin-top: 100px;
     align-items: center;
     font-family: 'mamelon3.5', sans-serif;
 }
 
 
 .text {
-  margin-top: 40px; /* Same spacing as the profile picture */
+  margin-top: 60px; /* Same spacing as the profile picture */
   text-align: center;
 }
 .text p {
