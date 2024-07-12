@@ -60,11 +60,18 @@
 
 
 .box-container {
-　　 margin-top: 400px;
-    text-align: center;
+　　 margin-top: 80px;
+    align-items: center;
     font-family: 'mamelon3.5', sans-serif;
 }
 
 
-
+.text {
+  margin-top: 40px; /* Same spacing as the profile picture */
+  text-align: center;
+}
+.text p {
+  margin: 0;
+  font-family: 'mamelon3.5', sans-serif;
+}
 
