@@ -11,15 +11,8 @@ function preloadImage(url) {
     const img = new Image();
     img.crossOrigin = "anonymous";  // CORS対策
     img.onload = function() {
-      const canvas = document.createElement('canvas');
-      const ctx = canvas.getContext('2d');
-      canvas.width = 768;
-      canvas.height = 432;
-      ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
-      
-      const resizedImageUrl = canvas.toDataURL('image/webp', 0.8); // WebP形式で圧縮
-      imageCache.set(url, resizedImageUrl);
-      resolve(resizedImageUrl);
+      imageCache.set(url, url); // 直接URLをキャッシュ
+      resolve(url);
     };
     
     img.onerror = function() {
@@ -31,22 +24,22 @@ function preloadImage(url) {
   });
 }
 
-function displayImage(resizedImageUrl) {
+function displayImage(imageUrl) {
   const randomImageElement = document.getElementById("random-image");
-  randomImageElement.src = resizedImageUrl;
+  randomImageElement.src = imageUrl;
 }
 
 function displayErrorImage() {
   const randomImageElement = document.getElementById("random-image");
-  randomImageElement.src = 'path/to/error-image.png';  // エラー時の画像パスを設定 - いらない？
-  randomImageElement.alt = '画像、読み込めませんでした';
+  randomImageElement.src = 'path/to/error-image.png';  // エラー時の画像パスを設定してください
+  randomImageElement.alt = '画像を読み込めませんでした';
 }
 
 // テキストデータの準備
 const textArray = [
   "標本調査を用いてどのくらいの数用意されているか当ててみるといい",
   "全部AI絵だよ",
-  "自分用：AVIF画像にしておく",
+  "AVIF形式に対応",
   "標本調査を用いてどのくらいの数用意されているか当ててみるといい",
   "このフォントって機械彫刻用標準書体みたいでいいね",
   "ここに30字以上入力するとスマホのレイアウトが崩れちゃう",
@@ -63,17 +56,24 @@ function displayRandomText() {
 }
 
 // GitHubの正しい画像URLを生成する関数
-function getGitHubImageUrl(index) {
-  return `https://raw.githubusercontent.com/Asiraat/Prototype/main/picture2/${index}.png`;
+function getGitHubImageUrl(index, format = 'avif') {
+  return `https://raw.githubusercontent.com/Asiraat/Prototype/main/picture3/${index}.${format}`;
+}
+
+// ブラウザがAVIFをサポートしているか確認
+function isAvifSupported() {
+  const canvas = document.createElement('canvas');
+  return canvas.toDataURL('image/avif').indexOf('data:image/avif') === 0;
 }
 
 // ランダムな画像を表示する関数
 async function displayRandomImage() {
   const randomIndex = Math.floor(Math.random() * 15) + 1;
-  const randomImageUrl = getGitHubImageUrl(randomIndex);
+  const format = isAvifSupported() ? 'avif' : 'png'; // AVIFがサポートされていない場合はPNGにフォールバック
+  const randomImageUrl = getGitHubImageUrl(randomIndex, format);
   try {
-    const resizedImageUrl = await preloadImage(randomImageUrl);
-    displayImage(resizedImageUrl);
+    const imageUrl = await preloadImage(randomImageUrl);
+    displayImage(imageUrl);
   } catch (error) {
     console.error('画像の表示に失敗しました:', error);
     displayErrorImage();
@@ -95,8 +95,9 @@ window.addEventListener('DOMContentLoaded', function() {
 
 // 他の画像をバックグラウンドでプリロード
 function preloadOtherImages() {
+  const format = isAvifSupported() ? 'avif' : 'png';
   for (let i = 1; i <= 15; i++) {
-    const imageUrl = getGitHubImageUrl(i);
+    const imageUrl = getGitHubImageUrl(i, format);
     preloadImage(imageUrl).catch(error => console.error('プリロード中にエラーが発生しました:', error));
   }
 }
