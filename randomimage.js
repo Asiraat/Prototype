@@ -39,7 +39,8 @@ function displayErrorImage() {
 const textArray = [
   "標本調査を用いてどのくらいの数用意されているか当ててみるといい",
   "全部AI絵だよ",
-  "AVIF形式に対応",
+  "画像の表示が遅いのはJavaScriptのせいにしてもらって構わないよ",
+  "負荷軽減のためにJavaScriptでリサイズしたら更に遅くなっちゃった",
   "標本調査を用いてどのくらいの数用意されているか当ててみるといい",
   "このフォントって機械彫刻用標準書体みたいでいいね",
   "ここに30字以上入力するとスマホのレイアウトが崩れちゃう",
@@ -68,7 +69,7 @@ function isAvifSupported() {
 
 // ランダムな画像を表示する関数
 async function displayRandomImage() {
-  const randomIndex = Math.floor(Math.random() * 15) + 1;
+  const randomIndex = Math.floor(Math.random() * 30) + 1;
   const format = isAvifSupported() ? 'avif' : 'png'; // AVIFがサポートされていない場合はPNGにフォールバック
   const randomImageUrl = getGitHubImageUrl(randomIndex, format);
   try {
