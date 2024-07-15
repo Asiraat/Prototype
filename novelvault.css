@@ -69,9 +69,19 @@
 .text {
   margin-top: 80px; /* Same spacing as the profile picture */
   text-align: center;
+  text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.4);
 }
 .text p {
   margin: 0;
   font-family: 'mamelon3.5', sans-serif;
 }
 
+.novel-title {
+  padding-left: 2ch;
+}
+
+
+.novel-title p {
+  margin: 0;
+  font-family: 'mamelon3.5', sans-serif;    
+}
