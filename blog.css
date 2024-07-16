@@ -75,12 +75,30 @@ body {
             text-align: center;
             text-shadow: 2px 2px 4px rgba(0,0,0,6);
             font-family: 'mamelon3.5', sans-serif;
+            width: 90%;
         }
 .main-text {
-            font-size: 2em;
-            margin-bottom: 10px;
+  font-size: 2em;
+  margin-bottom: 10px;
+  white-space: nowrap;
         }
 .sub-text {
             font-size: 1em;
         }
-   
+        @media (max-width: 768px) {
+            .main-text {
+                font-size: 1.5em;
+            }
+            .sub-text {
+                font-size: 0.8em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .main-text {
+                font-size: 1.2em;
+            }
+            .sub-text {
+                font-size: 0.7em;
+            }
+        }   
