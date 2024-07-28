@@ -58,7 +58,7 @@ body {
 .image-container {
             position: relative;
             width: 90%;
-            align-items: center;
+            margin: 0 auto 20px;
             max-height: 400px;
             overflow: hidden;
         }
